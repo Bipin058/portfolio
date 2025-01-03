@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#home">Bipin <span class="highlight">Poudel</span></a>
+        </div>
+        <div class="toggle-menu" onclick="toggleMenu()">&#9776;</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact me</a></li>
+        </ul>
+        <div class="theme-toggle">
+            <button class="toggle-btn" onclick="toggleTheme()">🌙</button>
+        </div>
+    </nav>
+</header>
+
+
+    <section id="home" class="home">
+      <div class="home-content">
+          <h1>Hi, I'm <span class="highlight">Bipin Poudel</span></h1>
+          <p>
+               <span class="typewriter">A Computer Engineering Student</span><br />at
+               Advanced College of Engineering and Management.
+          </p>
+          <a href="#projects" class="btn">View My Work</a>
+      </div>
+  </section>
+  
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+        <img src="images/me2.png" alt="Profile Picture" class="profile-pic" id="profile-pic">
+        <div class="about-text">
+            <p>
+                I'm in my final semester of Computer Engineering at Advanced College of Engineering and Management. Throughout my journey, I’ve tackled diverse projects, from graphics and web development to major research-oriented systems.
+            </p>
+            <p>
+                I specialize in web development, problem-solving, and exploring emerging technologies like blockchain and AI. My goal is to craft innovative solutions that bridge real-world challenges and technology.
+            </p>
+            <p>
+                Beyond coding, I enjoy <span id="dynamic-skill">photography</span> and outdoor adventures, which fuel my creativity and critical thinking.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          
+            <!-- Dynamic content from JavaScript -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-container">
+          <h1>Contact Me</h1>
+          <div class="contact-details">
+            <div class="contact-info">
+              <p><i class="fas fa-envelope"></i> poudelbipin58@gmail.com</p>
+              <p><i class="fas fa-phone-alt"></i> 9869956363</p>
+              <div class="social-icons">
+                <a href="https://www.facebook.com/bipin.poudel.165" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://github.com/Bipin058" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/bipin-poudel-24b1b5240" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/poudelbipin58" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              </div>
+              <div class="container">
+                <label class="label">
+                  <input type="checkbox" class="input" />
+                  <span class="circle" id="downloadAction">
+                    <svg
+                      class="icon"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="M12 19V5m0 14-4-4m4 4 4-4"
+                      ></path>
+                    </svg>
+                    <div class="square"></div>
+                  </span>
+                  <p class="title" >Download CV</p>
+                  <p class="title" id="openAction">Open</p>
+                </label>
+              </div>
+              
+              
+            </div>
+            <div class="contact-form">
+              <form method="post" netlify>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="submit-btn">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+    <footer class="footer">
+        <p>&copy; 2024 Bipin Poudel. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
